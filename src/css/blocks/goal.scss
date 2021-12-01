@@ -1,0 +1,142 @@
+.goal{
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  &__inner{
+    display: flex;
+    align-items: center;
+    padding: 73px 153px 128px;
+    img{
+      object-fit: contain;
+      width: 100%;
+      max-width: 413px;
+    }
+    @media(max-width: 1400px){
+      padding: 73px 140px 128px;
+    }
+    @media(max-width: 1350px){
+      padding: 73px 130px 128px;
+    }
+    @media(max-width: 1300px){
+      padding: 73px 115px 128px;
+    }
+    @media(max-width: 1250px){
+      padding: 73px 100px 128px;
+    }
+    @media(max-width: 1200px){
+      padding: 63px 90px 100px;
+    }
+    @media(max-width: 1150px){
+      padding: 53px 80px 90px;
+    }
+  }
+  h2{
+    width: 163px;
+    height: 29px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    color: $dark;
+    margin-bottom: 71px;
+  }
+  &__about{
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 0px;
+    width: 100%;
+    max-width: 653px;
+    height: 294px;
+    margin-right: 60px;
+    &-1{
+      max-width: 585px;
+    }
+    &-2{
+      max-width: 600px;
+    }
+    &-3{
+      max-width: 640px;
+    }
+    p{
+      margin-bottom: 50px;
+      b{
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media(max-width: 1024px){
+  .goal{
+    &__about{
+      margin-right: 30px;
+    }
+    &__inner{
+      padding: 43px 60px 80px;
+      h2{
+        margin-bottom: 31px;
+        text-align: center;
+        width: 100%;
+      }
+      display: flex;
+      justify-content: center;
+      img{
+        //display: none;
+      }
+    }
+  }
+  //display: none;
+}
+@media(max-width: 920px){
+  .goal{
+    &__about{
+      margin-right: 0;
+    }
+    &__img{
+      display: none;
+    }
+  }
+}
+@media(max-width: 718px){
+  .goal{
+    &__inner{
+      padding: 38px 20px;
+      //padding: 43px 60px 40px;
+    }
+    &__about{
+      p{
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+@media(max-width: 520px){
+  .goal{
+    &__about{
+      height:fit-content;
+    }
+    &__inner{
+
+    }
+  }
+}
+@media(max-width: 475px){
+  .goal__inner{
+    h2{
+      margin-bottom: 15px;
+    }
+  }
+}
+@media(max-width: 425px){
+  .goal__inner{
+    padding-bottom: 16px;
+  }
+}

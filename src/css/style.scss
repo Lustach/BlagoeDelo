@@ -1,0 +1,37 @@
+@import "vars.scss";
+@import "mixins.scss";
+@import './node_modules/reset-css/sass/reset';
+body, button {
+  overflow-x: hidden;
+  font-family: 'PT Sans', serif;
+}
+
+html,
+body {
+  height: 100%;
+  * {box-sizing: border-box;}
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+  //****
+
+}
+
+.logo{
+  margin-left: 156px;
+  margin-bottom: 57px;
+}
+
+@import "scrollbar.scss";
+@import "blocks/container.scss";
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/goal";
+@import "blocks/cup";
